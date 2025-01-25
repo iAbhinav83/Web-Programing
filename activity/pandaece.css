@@ -1,0 +1,248 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+#logo {
+    height: 50px;
+    width: 90px;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    align-items:center ;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.features {
+    padding-left: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-bottom: 20px;
+    background-color: #2F80ED;
+    color: #fff;
+}
+
+.features-content {
+    max-width: 50%;
+}
+
+.features-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.features-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.features-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.image {
+   
+    display: flex;
+    column-gap: 10%;
+    padding-left: 12%;
+}
+
+.features-content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.features-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #F2C94C;
+    font-size: 1.2rem;
+}
+
+.features-image img {
+    padding-right: 450px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.page1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/panda\ bg.jpeg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.hero-content {
+    max-width: 60%;
+    padding-left: 10%;
+}
+
+.hero-content h2 {
+    color: #9B51E0;
+    font-size: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.hero-content h1 span {
+    color: black;
+}
+
+.hero-content .highlight {
+    color: #C4F112;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A60DA;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.services-container {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card .icon img {
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .page1 {
+        background-image: url(/panda\ bg.jpeg);
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-content {
+        
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .features-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .features-image {
+        padding-left: 70px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 20px 0;
+    }
+}
+
+

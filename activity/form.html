@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch Form</title>
+    <style>
+       
+        .form-container{
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aqua;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Get in Touch</h2>
+        <form action="details.html" method="GET">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" value="">
+<br><br>
+<label for="phone">Mobile Number:</label>
+<input type="number" id="phone" name="phone" placeholder="Enter your mobile number" oninput="this.value = this.value.slice(0, 10)" required>
+<br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" value="sean.murphy@gmail.com">
+<br><br>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company">
+<br>
+<br>
+<label for="Dob">DOB</label>
+            <input type="text" id="company" name="company" placeholder="date of birth">
+            <br><br>
+            <label for="interest">Interested in</label>
+            <select id="interest" name="interest">
+                <option value="">Select an option</option>
+                <option value="web designing">web designing</option>
+                <option value="digital marketing">digital marketing</option>
+                <option value="backend development">backend development</option>
+                
+            </select>
+<br>
+<br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+<br>
+<br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

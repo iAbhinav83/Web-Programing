@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Details</title>
+    <style>
+        .details-container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lightyellow;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="details-container">
+        <h2>Submitted Details</h2>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="displayPhone"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Company:</strong> <span id="displayCompany"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="displayDob"></span></p>
+        <p><strong>Interest:</strong> <span id="displayInterest"></span></p>
+        <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+    </div>
+    <script>
+        // Retrieve the URL query parameters
+        const params = new URLSearchParams(window.location.search);
+
+        // Display each parameter's value
+        document.getElementById('displayName').textContent = params.get('name');
+        document.getElementById('displayPhone').textContent = params.get('phone');
+        document.getElementById('displayEmail').textContent = params.get('email');
+        document.getElementById('displayCompany').textContent = params.get('company');
+        document.getElementById('displayDob').textContent = params.get('dob');
+        document.getElementById('displayInterest').textContent = params.get('interest');
+        document.getElementById('displayMessage').textContent = params.get('message');
+    </script>
+</body>
+</html>
